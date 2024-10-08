@@ -1,0 +1,37 @@
+1. What happens when you divide an int variable by 0?
+	It will results in a runtime error known as a DivdieZeroException.
+
+2. What happens when you divide a double variable by 0?
+	It will results in Infinity, -Infinity, or NaN, depending on the values involved.
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+	It will causes the value to wrap around to int.MinValue.
+
+4. What is the difference between x = y++; and x = ++y;?
+	In the previous equation, x is set to original y, but in the latter one, x is set to original y plus one.
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+	For break, the loop ends. For continue, it just skip the current step in loop. For return, it will return the results and terminate the loop.
+
+6. What are the three parts of a for statement and which of them are required?
+	for (initialization; condition; iteration)
+	{
+		// Loop body
+	}
+	The condition is the only required part.
+
+7. What is the difference between the = and == operators?
+	= is to set the value, but == is to compare the two references or values for equality and it will return bool type result.
+
+8. Does the following statement compile? for ( ; true; ) ;
+	Yes.
+
+9. What does the underscore _ represent in a switch expression?
+	When used as a case pattern, _ can be employed to handle any unmatched cases.
+
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+	IEnumerable Interface.
+	
