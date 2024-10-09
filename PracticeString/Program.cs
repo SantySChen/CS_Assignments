@@ -10,6 +10,7 @@ Use a loop to read values from the original array and place them in the new arra
 print out the contents of both arrays, to be sure everything copied correctly. */
 
 using PracticeString;
+using System.Text.RegularExpressions;
 
 Console.WriteLine("Question1: ");
 
@@ -37,12 +38,14 @@ if it is simply “—“ . In the first two cases, your program should add or r
 given ("some item" in the example). If the user enters just “—“ then the program should
 clear the current list.  */
 Console.WriteLine("Question2: ");
+
 ArrayMethod method = new ArrayMethod();
 method.ListManager();
 
-/* 3. Write a method that calculates all prime numbers in given range and returns them as array
-of integers */
+///* 3. Write a method that calculates all prime numbers in given range and returns them as array
+//of integers */
 Console.WriteLine("Question3: ");
+
 int[] primes = method.FindPrimesInRange(5, 67);
 Console.WriteLine(string.Join(", ", primes));
 
@@ -87,3 +90,58 @@ int[] inputIntArr3 = Array.ConvertAll(inputStrArr3, int.Parse);
 
 int result = method.FindMostFrequentNumber(inputIntArr3);
 Console.WriteLine($"The leftmost most frequent number in this array is {result}");
+
+/* Practice Strings
+ * 1. Write a program that reads a string from the console, reverses its letters and prints the
+result back at the console.
+Write in two ways
+Convert the string to char array, reverse it, then convert it to string again
+Print the letters of the string in back direction (from the last to the first) in a for-loop  */
+Console.WriteLine("Question1: ");
+
+Console.WriteLine("Enter a string: ");
+string readString = Console.ReadLine();
+
+StringsMethod stringsMethod = new StringsMethod();
+string reversedString = stringsMethod.ReverseString(readString);
+Console.WriteLine(reversedString);
+
+
+/* 2. Write a program that reverses the words in a given sentence without changing the
+punctuation and spaces
+Use the following separators between the words: . , : ; = ( ) & [ ] " ' \ / ! ? (space).
+All other characters are considered part of words, e.g. C++, a+b, and a77 are
+considered valid words.
+The sentences always start by word and end by separator.  */
+Console.WriteLine("Question2: ");
+
+string sentence1 = "C# is not C++, and PHP is not Delphi!";
+Console.WriteLine(sentence1);
+sentence1 = stringsMethod.ReverseSentenceWithoutChangingPunc(sentence1);
+Console.WriteLine(sentence1);
+
+Console.WriteLine();
+
+string sentence2 = "The quick brown fox jumps over the lazy dog /Yes! Really!!!/.";
+Console.WriteLine(sentence2);
+sentence2 = stringsMethod.ReverseSentenceWithoutChangingPunc(sentence2);
+Console.WriteLine(sentence2);
+
+/* 3. Write a program that extracts from a given text all palindromes, e.g. “ABBA”, “lamal”, “exe”
+and prints them on the console on a single line, separated by comma and space.   */
+Console.WriteLine("Question3: ");
+
+string text = "Hi,exe? ABBA! Hog fully a string: ExE. Bo";
+List<string> palinList = stringsMethod.ExtractPalindromes(text);
+Console.WriteLine(string.Join(", ", palinList));
+
+/* 4. Write a program that parses an URL given in the following format:
+[protocol]://[server]/[resource]
+The parsing extracts its parts: protocol, server and resource.
+The [server] part is mandatory.
+The [protocol] and [resource] parts are optional   */
+Console.WriteLine("Question4: ");
+
+Console.WriteLine("Enter an URL:");
+string url = Console.ReadLine();
+stringsMethod.ParseUrl(url);
