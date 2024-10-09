@@ -5,9 +5,11 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02UnderstandingTypes", "02UnderstandingTypes\02UnderstandingTypes.csproj", "{6C6F1D87-A46D-4544-A61D-F8DF091A1263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03", "Chapter03\Chapter03.csproj", "{270CD713-B8D8-4C73-A930-F1E812FED003}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter03", "Chapter03\Chapter03.csproj", "{270CD713-B8D8-4C73-A930-F1E812FED003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeString", "PracticeString\PracticeString.csproj", "{63819F22-D167-461D-8F52-B04CF88985C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeString", "PracticeString\PracticeString.csproj", "{63819F22-D167-461D-8F52-B04CF88985C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object_Oriented_Programming", "Object_Oriented_Programming\Object_Oriented_Programming.csproj", "{A930322C-7D93-42F0-A7BA-7E622CAD0752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{63819F22-D167-461D-8F52-B04CF88985C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63819F22-D167-461D-8F52-B04CF88985C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63819F22-D167-461D-8F52-B04CF88985C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A930322C-7D93-42F0-A7BA-7E622CAD0752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A930322C-7D93-42F0-A7BA-7E622CAD0752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A930322C-7D93-42F0-A7BA-7E622CAD0752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A930322C-7D93-42F0-A7BA-7E622CAD0752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
